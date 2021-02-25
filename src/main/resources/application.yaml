@@ -1,13 +1,13 @@
 server:
   port: 8000
 
-#keycloak:
-#  realm: api
-#  auth-server-url: http://localhost:8180/auth
-#  ssl-required: external
-#  resource: springboot-microservice
-#  use-resource-role-mappings: true
-#  bearer-only: true
+keycloak:
+  realm: api
+  auth-server-url: http://localhost:8180/auth
+  ssl-required: external
+  resource: springboot-microservice
+  use-resource-role-mappings: true
+  bearer-only: true
 ##  enabled: false
 ##
 ### example mapping all with asterix
