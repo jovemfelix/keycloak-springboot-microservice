@@ -18,19 +18,19 @@ public class TestController {
 
 //    @RolesAllowed("user")
     @RequestMapping(value = "/user", method = RequestMethod.GET)
-    public ResponseEntity<String> getUser(@RequestHeader String jwtToken) {
+    public ResponseEntity<String> getUser() {
         return ResponseEntity.ok("Hello User");
     }
 
 //    @RolesAllowed("admin")
     @RequestMapping(value = "/admin", method = RequestMethod.GET)
-    public ResponseEntity<String> getAdmin(@RequestHeader String jwtToken) {
+    public ResponseEntity<String> getAdmin() {
         return ResponseEntity.ok("Hello Admin");
     }
 
 //    @RolesAllowed({ "admin", "user" })
     @RequestMapping(value = "/all-user", method = RequestMethod.GET)
-    public ResponseEntity<String> getAllUser(@RequestHeader String jwtToken) {
+    public ResponseEntity<String> getAllUser() {
         return ResponseEntity.ok("Hello All User");
     }
 
