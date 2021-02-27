@@ -2,7 +2,8 @@ server:
   port: 8080
 
 keycloak:
-  realm: ${SSO_REALM_NAME:REDHAT}
+  realm: ${SSO_REALM_NAME:redhat}
+#    disable-trust-manager: true
   auth-server-url: ${SSO_AUTH_URL:https://sso-cetelem.apps.cluster-afdf.afdf.sandbox763.opentlc.com/auth}
   ssl-required: external
   resource: ${SSO_CLIENT_ID:springboot-microservice}
